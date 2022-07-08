@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  webapp:
+    image: reactjs-geolocated:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
